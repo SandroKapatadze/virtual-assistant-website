@@ -1,0 +1,663 @@
+@font-face {
+  font-family: flight;
+  src: url(./media/font/FuturaLight.zip);
+}
+
+@font-face {
+  font-family: futura;
+  src: url(./media/font/futura.zip);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: futura;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* h1 {
+  font-size: 60px;
+}
+
+* h2 {
+  font-size: 32px;
+}
+
+* h3 {
+  font-size: 21px;
+}
+
+* p {
+  font-size: 17px;
+}
+
+.contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #ea6f66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.contact:hover {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #292f45;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+}
+
+header .username {
+  padding: 20px;
+  display: flex;
+}
+
+header .username .pfp {
+  font-size: 23px;
+  padding: 10px;
+  width: 27px;
+  height: 26px;
+  background-color: #ea6f66;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+header .username .pfp a {
+  font-weight: 100;
+  color: #292f45;
+}
+
+header .username .va {
+  height: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header .username .va a:first-of-type {
+  font-size: 19px;
+  color: white;
+  font-weight: 100px;
+}
+
+header .username .va a:last-of-type {
+  font-size: 16px;
+  color: white;
+  font-family: flight;
+  font-weight: 100;
+}
+
+header .info {
+  padding: 20px;
+  display: flex;
+}
+
+header .info .menuicon {
+  display: none;
+}
+
+header .info .services {
+  display: flex;
+  align-items: center;
+}
+
+header .info .services a {
+  font-size: 19px;
+  margin-right: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+header .info .services a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+header .user-icons {
+  display: flex;
+  margin-left: 30px;
+}
+
+header .user-icons .user {
+  display: flex;
+  align-items: center;
+}
+
+header .user-icons .user p {
+  color: #ea6f66;
+  font-size: 19px;
+  margin-left: 12px;
+}
+
+header .user-icons .user p:hover {
+  color: rgba(234, 111, 102, 0.5);
+  cursor: pointer;
+}
+
+header .user-icons .icon {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+header .user-icons .icon img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+header .user-icons .icon img:hover {
+  cursor: pointer;
+}
+
+/* ////// */
+
+.body {
+  height: 100%;
+}
+
+.body .bg {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  width: 100%;
+}
+
+.body .container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.body .container1 h1 {
+  font-family: futura;
+  color: white;
+}
+
+.body .container1 h4 {
+  font-size: 23px;
+  font-family: futura;
+  color: white;
+  margin-top: 10px;
+}
+
+.body .container1 button {
+  margin-top: 25px;
+  width: 140px;
+  height: 40px;
+  color: #292f45;
+  background-color: #ea6f66;
+  border: 0;
+  transition: 0.4s;
+  font-size: 17px;
+  font-family: flight;
+}
+
+.body .container1 button:hover {
+  background-color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.body .container1 .container2 button:hover {
+  background-color: #292f45;
+  color: white;
+}
+
+.body .container1 .container2 {
+  width: 820px;
+  height: 400px;
+  padding: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+
+.body .container1 .container2 .line {
+  position: absolute;
+  width: 1px;
+  height: 90px;
+  right: 50vw;
+  top: 520px;
+  background-color: #e5cbc7;
+}
+
+.body .container1 .container2 img {
+  width: 306px;
+  height: 363px;
+}
+
+.body .container1 .container2 .hello {
+  width: 410px;
+}
+
+.body .container1 .container2 .hello h2 {
+  margin: 0;
+  font-family: futura;
+}
+
+.body .container1 .container2 .hello p {
+  width: 360px;
+  font-family: flight;
+  margin: 40px 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.body .container1 h2 {
+  margin: 220px 0 40px 0;
+  font-family: futura;
+}
+
+.body .container1 p {
+  width: 470px;
+  font-size: 21px;
+  text-align: center;
+  font-family: flight;
+  margin-bottom: 100px;
+}
+
+.body .serv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.body .serv .card {
+  height: 300px;
+  width: 305px;
+  padding: 0 60px;
+  margin-top: 80px;
+}
+
+.body .serv .card:nth-child(2) {
+  border-right: #292f45 1px solid;
+  border-left: #292f45 1px solid;
+}
+
+.body .serv .card:nth-child(5) {
+  border-right: #292f45 1px solid;
+  border-left: #292f45 1px solid;
+}
+
+.body .serv .card svg {
+  width: 46px;
+  height: 46px;
+}
+
+.body .serv .card h3 {
+  font-family: futura;
+  margin: 15px 0 15px 0;
+}
+
+.body .serv .card p {
+  font-family: flight;
+  line-height: 1.5;
+  width: 275px;
+}
+
+.body .pricing {
+  width: 100%;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body .pricing button {
+  margin-top: 25px;
+  width: 140px;
+  height: 40px;
+  color: #292f45;
+  background-color: #ea6f66;
+  border: 0;
+  transition: 0.4s;
+  font-size: 17px;
+  font-family: flight;
+}
+
+.body .pricing button:hover {
+  background-color: #292f45;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.body .testemonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eaeff9;
+}
+
+.body .testemonial .blue {
+  display: flex;
+  background-color: #292f45;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.body .testemonial .blue h2 {
+  font-family: futura;
+  width: 800px;
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+}
+
+.body .testemonial .blue .brands {
+  margin-top: 80px;
+  display: flex;
+  width: 100%;
+}
+
+.body .testemonial .blue .brands div {
+  width: 25%;
+  height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 275px;
+}
+
+.body .testemonial .blue .brands div:nth-child(1) img {
+  width: 95px;
+  height: 64px;
+}
+
+.body .testemonial .blue .brands div:nth-child(2) img {
+  width: 106px;
+  height: 29px;
+}
+
+.body .testemonial .blue .brands div:nth-child(3) img {
+  width: 195px;
+  height: 19px;
+}
+
+.body .testemonial .blue .brands div:nth-child(4) img {
+  width: 192px;
+  height: 30px;
+}
+
+.body .testemonial .blue .brands div:nth-child(2),
+.body .testemonial .blue .brands div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
+
+.body .testemonial .cont {
+  display: flex;
+  justify-content: space-between;
+  width: 1180px;
+}
+
+.body .testemonial .cont div {
+  width: 320px;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+  margin-top: -182px;
+  background-color: white;
+}
+
+.body .testemonial .cont div svg {
+  width: 24px;
+  height: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.body .testemonial .cont div h3 {
+  font-family: futura;
+}
+
+.body .testemonial .cont div p {
+  font-family: flight;
+  width: 250px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 100;
+}
+
+.body .testemonial .cont div p:first-of-type {
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.body .testemonial .container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body .testemonial .container4 svg {
+  width: 360px;
+  margin: 80px 0 25px 0;
+}
+
+.body .testemonial .container4 h2 {
+  margin-bottom: 25px;
+}
+
+.body .testemonial .container4 button {
+  margin-top: 25px;
+  width: 140px;
+  height: 40px;
+  color: #292f45;
+  background-color: #ea6f66;
+  border: 0;
+  transition: 0.4s;
+  font-size: 17px;
+  font-family: flight;
+  margin-bottom: 100px;
+}
+
+.body .testemonial .container4 button:hover {
+  background-color: #292f45;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #292f45;
+  display: flex;
+  height: 66px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: white;
+  font-family: flight;
+}
+
+@media screen and (max-width: 600px) {
+  * h1 {
+    font-size: 28px;
+  }
+  * h2 {
+    font-size: 25px;
+  }
+  * h3 {
+    font-size: 20px;
+  }
+  header {
+    height: 90px;
+  }
+  header .username {
+    margin: 0;
+    width: 100%;
+  }
+  .contact {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+  }
+  .contact svg {
+    width: 25px;
+    height: 25px;
+  }
+  header .info .services,
+  header .info .user-icons {
+    display: none;
+  }
+
+  header .info .menuicon {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
+  .body .bg {
+    height: 328px;
+    width: 150%;
+    left: -90px;
+    top: 90px;
+  }
+
+  .body .container1 {
+    margin-top: 50px;
+  }
+
+  .body .contianer1 h4 {
+    font-size: 21px;
+  }
+
+  .body .container1 .container2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    padding: 40px 20px;
+    height: 690px;
+    margin-top: 50px;
+  }
+  .body .container1 .container2 .line {
+    height: 44px;
+    top: 332px;
+  }
+  .body .container1 .container2 img {
+    width: 222px;
+    height: 259px;
+  }
+  .body .container1 .container2 .hello {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body .container1 .container2 .hello h2 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .body .container1 .container2 .hello p {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+  }
+  .body .container1 .container2 .hello button {
+    margin: 0;
+    width: 160px;
+  }
+  .body .container1 h2 {
+    margin: 40px 0 20px 0;
+  }
+  .body .container1 p {
+    width: 80%;
+  }
+  .body .serv .card {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border: 0;
+    border-top: #292f45 1px solid;
+    padding: 0;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .body .pricing {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .body .testemonial {
+    width: 100%;
+  }
+  .body .testemonial .blue {
+    height: 580px;
+    width: 100%;
+    justify-content: start;
+  }
+  .body .testemonial .blue h2 {
+    width: 80%;
+    margin-top: 40px;
+  }
+  .body .testemonial .blue .brands {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .body .testemonial .blue .brands div {
+    width: 80%;
+    height: 80px;
+    padding: 0;
+  }
+  .body .testemonial .cont {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+  }
+  .body .testemonial .cont div {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .body .testemonial .container4 {
+    width: 100%;
+  }
+  .body .testemonial .container4 svg {
+    width: 70%;
+    margin: 0;
+  }
+  .body .testemonial .container4 h2 {
+    width: 80%;
+    text-align: center;
+  }
+  .body .testemonial .container4 button {
+    margin-bottom: 40px;
+  }
+  footer {
+    width: 100%;
+    padding: 20px 20px 40px 20px;
+  }
+  footer p {
+    width: 60%;
+  }
+}
